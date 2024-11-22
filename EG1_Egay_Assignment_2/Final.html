@@ -1,0 +1,211 @@
+<html>
+ <head>
+  <title>Egay Final Activity</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Final.css">
+ </head>
+ <body>
+    <div class="background">
+        <div class="navbar">
+            <div class="logo"><img alt="Logo" height="50" src="Images/Jh-sereno-.png" width="125"/>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <a href="#">MEET THE TEAM</a>
+            <a href="#">SEARCH FOR HOMES</a>
+            <a href="#">OUR COMMUNITIES</a>
+            <a href="#">HOME EVALUATION</a>
+            <a class="active" href="#">SERVICES</a>
+            <a href="#">HOME ACROSS AMERICA</a>
+            <a href="#">TESTIMONIALS</a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Find Your Dream House</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search by Address or Area">
+            <select>                
+                <option value="house">House</option>
+                <option value="type">Type</option>
+                <option value="apartment">Apartment</option>
+                <option value="Condo">Condo</option>
+            </select>
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="appointment"><button>BOOK AN APPOINTMENT<i class="fas fa-arrow-right"></i></button></div>
+    </div>
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+    <style>
+        /*MOBILE RESPONSIVE*/
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+            .nav-links a {
+                margin: 10px 0;
+                padding: 15px;
+                text-align: center;
+                width: 100%;
+            }
+            .nav-links a:hover {
+                background-color: rgb(37, 37, 37);
+                border-radius: 0;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .search-container {
+                padding: 10px;
+                font-size: 10px;
+                width: 75%;
+                margin: 0 auto;
+            }
+            .search-container input[type="text"], .search-container select, .search-container button {
+                margin: 5px 0;
+                width: 25%;
+                border-radius: 5px;
+                font-size: 13px;
+            }
+            .search-container select {
+                border-radius: 5px;
+            }
+            .search-container button {
+                border-radius: 5px;
+            }
+            }
+            .nav-links.active {
+                display: flex;
+        }
+    </style>
+    <div class="container">
+        <h1>Comprehensive Marketing Plan</h1>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas"><img src="Images/mail.png" style="width: 100px; height: 100px;"></i>
+                <h3>Responsive</h3>
+                <p>I am always available via phone, text, or email.</p>
+            </div>
+            <div class="card">
+                <i class="fas"><img src="Images/flag.png" style="width: 100px; height: 100px;"></i>
+                <h3>Syndication</h3>
+                <p>I market your property locally, nationally, and internationally.</p>
+            </div>
+            <div class="card">
+                <i class="fas"><img src="Images/flag.png" style="width: 100px; height: 100px;"></i>
+                <h3>Engagement</h3>
+                <p>I utilize social media to showcase your property, interact with potential clients.</p>
+            </div>
+        </div>
+    </div> 
+    <style>
+        /*MOBILE RESPONSIVE*/
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Work with Us</h1>
+            <p class="caption">With decades of experience in luxurious Tri Valley real estate, our team is here to ensure <br>that your dreams are a reality.Let us guide you through your home buying journey, contact us today!</p>
+            <button>CONTACT US</button>
+        </div>
+    </div>
+    <div class="footer-content">
+        <div>
+            <h2 class="item-1">Julie Hansen Partnership</h2>
+            <p>An elite group of the East Bay's most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</p>
+        </div>
+        <div>
+            <h2 class="item-2">ADDRESS</h2>
+            <p>4733 Chabot Drive #100<br>Pleasanton, CA 94588<br>Julie Hansen-Orvis | CA DRE# 00934447</p>
+            <h2 class="item-3">CONTACT INFORMATION</h2>
+            <p>(925) 553-6707<br>luxuryhomesinwc@icloud.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div>
+            <h2>Newsletter</h2>
+            <p>Subscribe to our Newsletter for latest news and updates. Stay tuned!</p>
+            <input type="email" placeholder="Email Address">
+            <p><input type="checkbox"> By providing your contact information, you acknowledge and agree to our <a href="#">Privacy Policy</a> and consent to receiving marketing communications.</p>
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+    <style>
+        /*MOBILE RESPONSIVE*/
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .footer-content > div {
+                width: 30%;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    <div class="contents"></div>
+    <div class="footer">
+        <div class="footer-left"><a href="#">Website Designed & Developed by Luxury Presence</a></div>
+        <div class="footer-center">
+            <span>Copyright 2024 |<a href="#">Privacy Policy</a></span>
+        </div>
+        <div class="footer-right">
+            <div class="footer-icons">
+                <img alt="Realtor logo" height="20" src="Images/realtor.png" width="20"/>
+                <img alt="Equal Housing Opportunity logo" height="20" src="Images/housing.png" width="20"/>
+                <img alt="Sereno logo" height="20" src="Images/sereno.png" width="60"/>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*MOBILE RESPONSIVE*/
+        @media (max-width: 768px) {
+            .footer-left, .footer-center, .footer-right {
+                flex: 1 1 100%;
+                justify-content: center;
+                text-align: center;
+            }
+            .footer-left {
+                margin-left: 0;
+            }
+            .footer-center {
+                margin-top: 0;
+                margin-right: 0;
+            }
+            .footer-right {
+                margin-right: 0;
+            }
+        }
+    </style>
+</body>
+</html>
